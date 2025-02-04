@@ -25,7 +25,7 @@ class HTMLNode:
             props_html += f' {key}="{value}"'
             
         return props_html
-
+    
     
     def __repr__(self):
         """
