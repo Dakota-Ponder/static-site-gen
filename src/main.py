@@ -5,9 +5,10 @@ from leafnode import *
 def main():
     
     # p_node = LeafNode("p", "This is a paragraph of text.")
-    a_node = LeafNode("a", "Click me!", {"href": "https://www.google.com"})
+    node = TextNode("This is text with a `code block` word", TextType.NORMAL)
+    new_nodes = node.split_nodes_delimiter([node], "`", TextType.CODE)
     
-    print(a_node.to_html())
+    print(new_nodes)
 
     
 main()
